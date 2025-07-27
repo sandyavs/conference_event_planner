@@ -17,6 +17,7 @@ const ConferenceEvent = () => {
 		setShowItems(!showItems);
 	};
 
+    //event handlers
 	const handleAddToCart = (index) => {
 		if (venueItems[index].name === "Auditorium Hall (Capacity:200)" && venueItems[index].quantity >= 3) {
 			return;
@@ -48,6 +49,7 @@ const ConferenceEvent = () => {
 	const ItemsDisplay = ({ items }) => {
 
 	};
+    
 	const calculateTotalCost = (section) => {
 		let totalCost = 0;
 		if (section === "venue") {
